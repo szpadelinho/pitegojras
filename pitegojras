@@ -1,0 +1,29 @@
+namespace Zadanie
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj liczbę a: ");
+            string a = Console.ReadLine();
+            Console.WriteLine("Podaj liczbę b: ");
+            string b = Console.ReadLine();
+            Console.WriteLine("Podaj liczbę c: ");
+            string c = Console.ReadLine();
+
+            int x = int.Parse(a);
+            int y = int.Parse(b);
+            int z = int.Parse(c);
+
+            if((x * x) + (y * y) == z * z)
+            {
+                Console.WriteLine("Podane wartości są prawidłowe.");
+            }
+            else
+            {
+                Console.WriteLine("Podane wartości nie tworzą trójki pitagorejskiej.");
+            }
+            Console.ReadKey(true);
+        }
+    }
+}
